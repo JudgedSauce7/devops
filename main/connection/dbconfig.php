@@ -4,7 +4,7 @@ class Database
     private $host = "mysql-server";
     private $db_name = "mydb";
     private $username = "root";
-    private $password = "";
+    private $password = "secret";
     public $conn;
 
     public function dbConnection()
@@ -31,7 +31,7 @@ class Database
 $db_host = "mysql-server";
 $db_name = "mydb";
 $db_user = "root";
-$db_pass = "";
+$db_pass = "secret";
 
 try{
 

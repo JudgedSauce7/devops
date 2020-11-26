@@ -2,7 +2,7 @@
 <?php
 
 $db_username = 'root'; // Your MYSQL Username.
-$db_password = ''; // Your MYSQL Password.
+$db_password = 'secret'; // Your MYSQL Password.
 $db_name = 'mydb'; // Your Database name.
 $db_host = 'mysql-server';
 
