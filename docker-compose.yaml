@@ -15,7 +15,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD:
     volumes:
-      - "./main/Database/:/var/lib/mysql"
+      - mysql-data:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:5.0.1
@@ -23,6 +23,8 @@ services:
     environment:
       PMA_HOST: mysql-server
       PMA_USER: root
-      PMA_PASSWORD:
+      PMA_PASSWORD: secret
     ports:
       - "5000:80"
+volumes:
+  mysql-data:
