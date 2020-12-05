@@ -10,7 +10,7 @@ services:
     ports:
       - "80:80"
   mysql-server:
-    image: mysql:8.0.19
+    image: mysql:latest
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: secret
